@@ -18,9 +18,11 @@ url                      : https://loddyluo.github.io # The base hostname & prot
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "loddyluo/loddyluo.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# Site Author / Hero Section - The following control what appear as part of the author content on the side bar.
+#                              This section mirrors the "Hero/Basic Info" structure from jzc-2007
+#                              (Name, Bio, Social Links, Contact information)
+#                              If a field is blank the icon and link will not appear, otherwise it will be shown.
+#                              Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
   avatar           : "profile.png"
@@ -85,6 +87,47 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   
+
+# Education - Timeline of educational background (inspired by jzc-2007 structure)
+# Add your educational history here with the following structure:
+education:
+  - degree: # e.g., "B.S. in Computer Science"
+    institution: # e.g., "Tsinghua University"
+    location: # e.g., "Beijing, China"
+    start_date: # e.g., "2024"
+    end_date: # e.g., "2028" or "Present"
+    description: # Optional description or achievements
+    gpa: # Optional GPA information
+    honors: # Optional honors or distinctions
+
+# Skills - Categorized skills section (inspired by jzc-2007 structure)
+# Organize your skills by category:
+skills:
+  programming_languages:
+    # - Python
+    # - Java
+    # - C++
+    # - JavaScript
+  frameworks_and_tools:
+    # - React
+    # - TensorFlow
+    # - PyTorch
+    # - Git
+  languages:
+    # - English (Fluent)
+    # - Chinese (Native)
+  other_skills:
+    # - Machine Learning
+    # - Data Analysis
+    # - Algorithm Design
+
+# Awards - List of awards and achievements (inspired by jzc-2007 structure)
+# Add your awards and honors here:
+awards:
+  - title: # Award title
+    issuer: # Organization that issued the award
+    date: # Date received
+    description: # Optional description
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -214,7 +257,9 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
+# Collections - Content organization for Projects, Publications, and other sections
+# These settings control the types of collections used by the template.
+# The portfolio and publications collections mirror the "Projects" and "Publications" sections from jzc-2007
 collections:
   teaching:
     output: true
